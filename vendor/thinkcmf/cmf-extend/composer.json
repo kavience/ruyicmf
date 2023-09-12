@@ -1,0 +1,20 @@
+{
+    "name": "ruyicmf/cmf-extend",
+    "description": "The RuYiCMF extend Package",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "catman",
+            "email": "catman@ruyicmf.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "dir\\": "src/dir",
+            "tree\\": "src/tree",
+            "wxapp\\": "src/wxapp"
+        },
+        "files": [
+        ]
+    }
+}

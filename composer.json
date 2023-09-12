@@ -1,0 +1,66 @@
+{
+    "name": "kavience/ruyicms",
+    "description": "RuYiCMS based on RuYiCMF 6.0 ",
+    "type": "project",
+    "keywords": [
+        "cmf",
+        "ruyicms",
+        "framework",
+        "ThinkPHP",
+        "ORM"
+    ],
+    "homepage": "http://www.ruyicms.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kavience",
+            "email": "kavience@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-pdo": "*",
+        "kavience/ruyicmf-app": "^6.0.0",
+        "kavience/ruyicmf-install": "^6.0.0",
+        "kavience/ruyicmf-api": "^6.0.0",
+        "kavience/ruyicmf-appstore": "^1.0",
+        "kavience/ruyicmf-root": "^1.0"
+    },
+    "require-dev": {
+        "topthink/think-trace": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app",
+            "api\\": "api",
+            "plugins\\": "public/plugins",
+            "themes\\": "public/themes"
+        },
+        "psr-0": {
+            "": "extend/"
+        }
+    },
+    "extra": {
+        "think-config": "data/config"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "vendor-dir": "vendor",
+        "allow-plugins": {
+            "kavience/ruyicmf-root": true
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php think service:discover",
+            "@php think vendor:publish",
+            "@php think migrate:run"
+        ]
+    },
+    "repositories": {
+    }
+}

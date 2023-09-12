@@ -1,0 +1,28 @@
+{
+    "name": "ruyicmf/cmf-appstore",
+    "description": "The RuYiCMF App Store Package",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "catman",
+            "email": "catman@ruyicmf.com"
+        }
+    ],
+    "require": {
+        "chamilo/pclzip": "^2.8"
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "app\\admin\\AppStoreService"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\admin\\": "src"
+        },
+        "files": [
+        ]
+    }
+}

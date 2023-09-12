@@ -1,0 +1,25 @@
+{
+    "name": "ruyicmf/cmf-api",
+    "description": "The RuYiCMF 5.1 Core Api Package",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "catman",
+            "email": "catman@ruyicmf.com"
+        },
+        {
+            "name": "55",
+            "email": "wuwu@wuwuseo.com"
+        }
+    ],
+    "require": {
+        "ruyicmf/cmf": "^6.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "api\\": "src"
+        },
+        "files": [
+        ]
+    }
+}
